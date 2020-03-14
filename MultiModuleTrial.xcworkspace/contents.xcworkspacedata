@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:FrameworkSample/FrameworkSample.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:MultiModuleTrial/MultiModuleTrial.xcodeproj">
    </FileRef>
 </Workspace>
