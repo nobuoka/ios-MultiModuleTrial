@@ -12,6 +12,7 @@
 		4CDB67D22427CC65002746A9 /* FrameworkSample.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CDB67C42427CC64002746A9 /* FrameworkSample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4CDB67ED2427D16D002746A9 /* FRSFoo.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CDB67EB2427D16C002746A9 /* FRSFoo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4CDB67EE2427D16D002746A9 /* FRSFoo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB67EC2427D16D002746A9 /* FRSFoo.m */; };
+		4CDB67F62427E516002746A9 /* FRSBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB67F52427E516002746A9 /* FRSBar.swift */; };
 		4DCD1021C9A9BE9695676E34 /* Pods_FrameworkSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716061DB3F911741C6028602 /* Pods_FrameworkSample.framework */; };
 		A061F6D87A999EDF40002500 /* Pods_FrameworkSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C2D31EA2A3F3D7F93677DF /* Pods_FrameworkSampleTests.framework */; };
 /* End PBXBuildFile section */
@@ -35,6 +36,7 @@
 		4CDB67D12427CC65002746A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CDB67EB2427D16C002746A9 /* FRSFoo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRSFoo.h; sourceTree = "<group>"; };
 		4CDB67EC2427D16D002746A9 /* FRSFoo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRSFoo.m; sourceTree = "<group>"; };
+		4CDB67F52427E516002746A9 /* FRSBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRSBar.swift; sourceTree = "<group>"; };
 		61FE90A674EDC6E9B250437B /* Pods-FrameworkSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkSample.debug.xcconfig"; path = "Target Support Files/Pods-FrameworkSample/Pods-FrameworkSample.debug.xcconfig"; sourceTree = "<group>"; };
 		6576801F0E15D40B41F20C65 /* Pods-FrameworkSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-FrameworkSampleTests/Pods-FrameworkSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		69C2D31EA2A3F3D7F93677DF /* Pods_FrameworkSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrameworkSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +105,7 @@
 				4CDB67C52427CC64002746A9 /* Info.plist */,
 				4CDB67EB2427D16C002746A9 /* FRSFoo.h */,
 				4CDB67EC2427D16D002746A9 /* FRSFoo.m */,
+				4CDB67F52427E516002746A9 /* FRSBar.swift */,
 			);
 			path = FrameworkSample;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				TargetAttributes = {
 					4CDB67C02427CC64002746A9 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 					4CDB67C92427CC65002746A9 = {
 						CreatedOnToolsVersion = 11.1;
@@ -284,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CDB67EE2427D16D002746A9 /* FRSFoo.m in Sources */,
+				4CDB67F62427E516002746A9 /* FRSBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +431,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 61FE90A674EDC6E9B250437B /* Pods-FrameworkSample.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -442,6 +448,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = info.vividcode.FrameworkSample;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -450,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0AC02EE516E91B2A238AF5C /* Pods-FrameworkSample.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -466,6 +475,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = info.vividcode.FrameworkSample;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -474,6 +484,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6576801F0E15D40B41F20C65 /* Pods-FrameworkSampleTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FrameworkSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -491,6 +502,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EE949B87C7C3469876FB8297 /* Pods-FrameworkSampleTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FrameworkSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -4,11 +4,15 @@
 
 #import <Foundation/Foundation.h>
 
+@class FRSBar;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FRSFoo : NSObject
 
 +(NSString *)firebaseAppClassName;
+
++(FRSBar *)createBar;
 
 @end
 

@@ -14,7 +14,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     printf("Class name : %s\n", FRSFoo.firebaseAppClassName.UTF8String);
-    printf("Class name : %s\n", NSStringFromClass(FRSFoo.class).UTF8String);
+    printf("Class name : %s\n", [[FRSFoo createBar] bar].UTF8String);
     return YES;
 }
 
