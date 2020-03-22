@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "MultiModuleTrial-Swift.h"
+
+@import FrameworkSample;
 
 @interface ViewController ()
 
@@ -17,7 +20,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-}
+    Foo *foo = [[[Bar alloc] init] createFoo];
+    Bar *bar = [foo createBar];
+    [bar sayHello];
+    [foo sayHello];
 
+    [Bar check];
+    [Foo check];
+
+    [D d];
+}
 
 @end

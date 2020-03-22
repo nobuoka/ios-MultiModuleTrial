@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C117C912420F01000E0BB3D /* SampleSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C117C902420F01000E0BB3D /* SampleSwift.swift */; };
 		4C931542241D2BB40096A39E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C931541241D2BB40096A39E /* AppDelegate.m */; };
 		4C931545241D2BB40096A39E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C931544241D2BB40096A39E /* SceneDelegate.m */; };
 		4C931548241D2BB50096A39E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C931547241D2BB50096A39E /* ViewController.m */; };
@@ -28,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C117C8B2420EDA700E0BB3D /* FrameworkSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FrameworkSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C117C8F2420F00F00E0BB3D /* MultiModuleTrial-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MultiModuleTrial-Bridging-Header.h"; sourceTree = "<group>"; };
+		4C117C902420F01000E0BB3D /* SampleSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSwift.swift; sourceTree = "<group>"; };
 		4C93153D241D2BB40096A39E /* MultiModuleTrial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiModuleTrial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C931540241D2BB40096A39E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4C931541241D2BB40096A39E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -63,12 +67,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C117C8A2420EDA700E0BB3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C117C8B2420EDA700E0BB3D /* FrameworkSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4C931534241D2BB40096A39E = {
 			isa = PBXGroup;
 			children = (
 				4C93153F241D2BB40096A39E /* MultiModuleTrial */,
 				4C93155B241D2BB60096A39E /* MultiModuleTrialTests */,
 				4C93153E241D2BB40096A39E /* Products */,
+				4C117C8A2420EDA700E0BB3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +108,8 @@
 				4C93154E241D2BB60096A39E /* LaunchScreen.storyboard */,
 				4C931551241D2BB60096A39E /* Info.plist */,
 				4C931552241D2BB60096A39E /* main.m */,
+				4C117C902420F01000E0BB3D /* SampleSwift.swift */,
+				4C117C8F2420F00F00E0BB3D /* MultiModuleTrial-Bridging-Header.h */,
 			);
 			path = MultiModuleTrial;
 			sourceTree = "<group>";
@@ -157,6 +172,7 @@
 				TargetAttributes = {
 					4C93153C241D2BB40096A39E = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 					4C931557241D2BB60096A39E = {
 						CreatedOnToolsVersion = 11.1;
@@ -210,6 +226,7 @@
 			files = (
 				4C931548241D2BB50096A39E /* ViewController.m in Sources */,
 				4C931542241D2BB40096A39E /* AppDelegate.m in Sources */,
+				4C117C912420F01000E0BB3D /* SampleSwift.swift in Sources */,
 				4C931553241D2BB60096A39E /* main.m in Sources */,
 				4C931545241D2BB40096A39E /* SceneDelegate.m in Sources */,
 			);
@@ -367,6 +384,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MultiModuleTrial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -375,6 +393,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = info.vividcode.MultiModuleTrial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MultiModuleTrial/MultiModuleTrial-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -383,6 +404,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MultiModuleTrial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -391,6 +413,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = info.vividcode.MultiModuleTrial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MultiModuleTrial/MultiModuleTrial-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -398,6 +422,7 @@
 		4C931565241D2BB60096A39E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MultiModuleTrialTests/Info.plist;
@@ -417,6 +442,7 @@
 		4C931566241D2BB60096A39E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MultiModuleTrialTests/Info.plist;

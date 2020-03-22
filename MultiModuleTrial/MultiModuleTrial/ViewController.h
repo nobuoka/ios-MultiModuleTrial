@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@import FrameworkSample;
 
 @interface ViewController : UIViewController
 
+@property Foo *f;
+@property Bar *b;
 
 @end
-

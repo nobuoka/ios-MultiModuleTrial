@@ -10,6 +10,9 @@
 		4C117C70241D43A300E0BB3D /* FrameworkSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C117C66241D43A300E0BB3D /* FrameworkSample.framework */; };
 		4C117C75241D43A300E0BB3D /* FrameworkSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C117C74241D43A300E0BB3D /* FrameworkSampleTests.m */; };
 		4C117C77241D43A300E0BB3D /* FrameworkSample.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C117C69241D43A300E0BB3D /* FrameworkSample.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C117C85241D676000E0BB3D /* Foo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C117C84241D676000E0BB3D /* Foo.swift */; };
+		4C117C88241D677100E0BB3D /* Bar.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C117C86241D677100E0BB3D /* Bar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C117C89241D677100E0BB3D /* Bar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C117C87241D677100E0BB3D /* Bar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		4C117C6F241D43A300E0BB3D /* FrameworkSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrameworkSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C117C74241D43A300E0BB3D /* FrameworkSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameworkSampleTests.m; sourceTree = "<group>"; };
 		4C117C76241D43A300E0BB3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C117C84241D676000E0BB3D /* Foo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foo.swift; sourceTree = "<group>"; };
+		4C117C86241D677100E0BB3D /* Bar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bar.h; sourceTree = "<group>"; };
+		4C117C87241D677100E0BB3D /* Bar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,9 @@
 			children = (
 				4C117C69241D43A300E0BB3D /* FrameworkSample.h */,
 				4C117C6A241D43A300E0BB3D /* Info.plist */,
+				4C117C84241D676000E0BB3D /* Foo.swift */,
+				4C117C86241D677100E0BB3D /* Bar.h */,
+				4C117C87241D677100E0BB3D /* Bar.m */,
 			);
 			path = FrameworkSample;
 			sourceTree = "<group>";
@@ -93,6 +102,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C117C88241D677100E0BB3D /* Bar.h in Headers */,
 				4C117C77241D43A300E0BB3D /* FrameworkSample.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +157,7 @@
 				TargetAttributes = {
 					4C117C65241D43A300E0BB3D = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 					4C117C6E241D43A300E0BB3D = {
 						CreatedOnToolsVersion = 11.1;
@@ -194,6 +205,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C117C85241D676000E0BB3D /* Foo.swift in Sources */,
+				4C117C89241D677100E0BB3D /* Bar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +348,7 @@
 		4C117C7B241D43A300E0BB3D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -347,9 +361,12 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = info.vividcode.FrameworkSample;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -357,6 +374,7 @@
 		4C117C7C241D43A300E0BB3D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -369,9 +387,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = info.vividcode.FrameworkSample;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -379,6 +399,7 @@
 		4C117C7E241D43A300E0BB3D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FrameworkSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -395,6 +416,7 @@
 		4C117C7F241D43A300E0BB3D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FrameworkSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
