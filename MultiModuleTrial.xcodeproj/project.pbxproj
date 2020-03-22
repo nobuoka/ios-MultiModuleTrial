@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,6 +27,20 @@
 			remoteGlobalIDString = 4CDB678B2427BB51002746A9;
 			remoteInfo = MultiModuleTrial;
 		};
+		4CDB67E02427CC66002746A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CDB67DB2427CC65002746A9 /* FrameworkSample.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CDB67C12427CC64002746A9;
+			remoteInfo = FrameworkSample;
+		};
+		4CDB67E22427CC66002746A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CDB67DB2427CC65002746A9 /* FrameworkSample.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CDB67CA2427CC65002746A9;
+			remoteInfo = FrameworkSampleTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +63,7 @@
 		4CDB67A72427BB54002746A9 /* MultiModuleTrialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiModuleTrialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDB67AB2427BB54002746A9 /* MultiModuleTrialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiModuleTrialTests.m; sourceTree = "<group>"; };
 		4CDB67AD2427BB54002746A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CDB67DB2427CC65002746A9 /* FrameworkSample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FrameworkSample.xcodeproj; path = FrameworkSample/FrameworkSample.xcodeproj; sourceTree = "<group>"; };
 		7BCCE83244A533F0135E0BC2 /* Pods-MultiModuleTrialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiModuleTrialTests.debug.xcconfig"; path = "Target Support Files/Pods-MultiModuleTrialTests/Pods-MultiModuleTrialTests.debug.xcconfig"; sourceTree = "<group>"; };
 		83079F0923CFEE6A81B090EF /* Pods_MultiModuleTrialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiModuleTrialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -78,6 +93,7 @@
 			children = (
 				4CDB678E2427BB51002746A9 /* MultiModuleTrial */,
 				4CDB67AA2427BB54002746A9 /* MultiModuleTrialTests */,
+				4CDB67B62427CBF9002746A9 /* Modules */,
 				4CDB678D2427BB51002746A9 /* Products */,
 				CC11330B1B1651A0668C917B /* Pods */,
 				F4C1A3B0685636D664DF23FD /* Frameworks */,
@@ -120,6 +136,23 @@
 			path = MultiModuleTrialTests;
 			sourceTree = "<group>";
 		};
+		4CDB67B62427CBF9002746A9 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4CDB67DB2427CC65002746A9 /* FrameworkSample.xcodeproj */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4CDB67DC2427CC65002746A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CDB67E12427CC66002746A9 /* FrameworkSample.framework */,
+				4CDB67E32427CC66002746A9 /* FrameworkSampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		CC11330B1B1651A0668C917B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,7 +161,6 @@
 				7BCCE83244A533F0135E0BC2 /* Pods-MultiModuleTrialTests.debug.xcconfig */,
 				4472F9C20C29066791678618 /* Pods-MultiModuleTrialTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -211,6 +243,12 @@
 			mainGroup = 4CDB67832427BB51002746A9;
 			productRefGroup = 4CDB678D2427BB51002746A9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4CDB67DC2427CC65002746A9 /* Products */;
+					ProjectRef = 4CDB67DB2427CC65002746A9 /* FrameworkSample.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4CDB678B2427BB51002746A9 /* MultiModuleTrial */,
@@ -218,6 +256,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4CDB67E12427CC66002746A9 /* FrameworkSample.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FrameworkSample.framework;
+			remoteRef = 4CDB67E02427CC66002746A9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4CDB67E32427CC66002746A9 /* FrameworkSampleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FrameworkSampleTests.xctest;
+			remoteRef = 4CDB67E22427CC66002746A9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4CDB678A2427BB51002746A9 /* Resources */ = {
