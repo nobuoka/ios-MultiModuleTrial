@@ -10,6 +10,8 @@
 		4CDB67CB2427CC65002746A9 /* FrameworkSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDB67C12427CC64002746A9 /* FrameworkSample.framework */; };
 		4CDB67D02427CC65002746A9 /* FrameworkSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB67CF2427CC65002746A9 /* FrameworkSampleTests.m */; };
 		4CDB67D22427CC65002746A9 /* FrameworkSample.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CDB67C42427CC64002746A9 /* FrameworkSample.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CDB67ED2427D16D002746A9 /* FRSFoo.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CDB67EB2427D16C002746A9 /* FRSFoo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CDB67EE2427D16D002746A9 /* FRSFoo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB67EC2427D16D002746A9 /* FRSFoo.m */; };
 		4DCD1021C9A9BE9695676E34 /* Pods_FrameworkSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716061DB3F911741C6028602 /* Pods_FrameworkSample.framework */; };
 		A061F6D87A999EDF40002500 /* Pods_FrameworkSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C2D31EA2A3F3D7F93677DF /* Pods_FrameworkSampleTests.framework */; };
 /* End PBXBuildFile section */
@@ -31,6 +33,8 @@
 		4CDB67CA2427CC65002746A9 /* FrameworkSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrameworkSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDB67CF2427CC65002746A9 /* FrameworkSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameworkSampleTests.m; sourceTree = "<group>"; };
 		4CDB67D12427CC65002746A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CDB67EB2427D16C002746A9 /* FRSFoo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRSFoo.h; sourceTree = "<group>"; };
+		4CDB67EC2427D16D002746A9 /* FRSFoo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRSFoo.m; sourceTree = "<group>"; };
 		61FE90A674EDC6E9B250437B /* Pods-FrameworkSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkSample.debug.xcconfig"; path = "Target Support Files/Pods-FrameworkSample/Pods-FrameworkSample.debug.xcconfig"; sourceTree = "<group>"; };
 		6576801F0E15D40B41F20C65 /* Pods-FrameworkSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-FrameworkSampleTests/Pods-FrameworkSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		69C2D31EA2A3F3D7F93677DF /* Pods_FrameworkSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrameworkSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +101,8 @@
 			children = (
 				4CDB67C42427CC64002746A9 /* FrameworkSample.h */,
 				4CDB67C52427CC64002746A9 /* Info.plist */,
+				4CDB67EB2427D16C002746A9 /* FRSFoo.h */,
+				4CDB67EC2427D16D002746A9 /* FRSFoo.m */,
 			);
 			path = FrameworkSample;
 			sourceTree = "<group>";
@@ -127,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CDB67D22427CC65002746A9 /* FrameworkSample.h in Headers */,
+				4CDB67ED2427D16D002746A9 /* FRSFoo.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CDB67EE2427D16D002746A9 /* FRSFoo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

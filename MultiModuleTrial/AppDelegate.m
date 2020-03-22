@@ -3,6 +3,7 @@
 //
 
 #import "AppDelegate.h"
+@import FrameworkSample;
 
 @interface AppDelegate ()
 
@@ -12,7 +13,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    printf("Class name : %s\n", FRSFoo.firebaseAppClassName.UTF8String);
+    printf("Class name : %s\n", NSStringFromClass(FRSFoo.class).UTF8String);
     return YES;
 }
 
