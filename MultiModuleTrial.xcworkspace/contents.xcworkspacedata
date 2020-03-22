@@ -5,6 +5,9 @@
       location = "group:MultiModuleTrial.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Modules/FrameworkSample/FrameworkSample.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
