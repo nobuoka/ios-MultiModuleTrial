@@ -15,6 +15,8 @@
 		4CDB679F2427BB53002746A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CDB679D2427BB53002746A9 /* LaunchScreen.storyboard */; };
 		4CDB67A22427BB53002746A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB67A12427BB53002746A9 /* main.m */; };
 		4CDB67AC2427BB54002746A9 /* MultiModuleTrialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB67AB2427BB54002746A9 /* MultiModuleTrialTests.m */; };
+		5643F93AB8008E5422B8DB2D /* Pods_MultiModuleTrial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E88849E3B79C61EE5ECE3C /* Pods_MultiModuleTrial.framework */; };
+		E903D567C0BF94AA78F277AF /* Pods_MultiModuleTrialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83079F0923CFEE6A81B090EF /* Pods_MultiModuleTrialTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		029DB588530E481DAB067E26 /* Pods-MultiModuleTrial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiModuleTrial.release.xcconfig"; path = "Target Support Files/Pods-MultiModuleTrial/Pods-MultiModuleTrial.release.xcconfig"; sourceTree = "<group>"; };
+		0A380AE7C955DCD42E217F4D /* Pods-MultiModuleTrial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiModuleTrial.debug.xcconfig"; path = "Target Support Files/Pods-MultiModuleTrial/Pods-MultiModuleTrial.debug.xcconfig"; sourceTree = "<group>"; };
+		4472F9C20C29066791678618 /* Pods-MultiModuleTrialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiModuleTrialTests.release.xcconfig"; path = "Target Support Files/Pods-MultiModuleTrialTests/Pods-MultiModuleTrialTests.release.xcconfig"; sourceTree = "<group>"; };
+		48E88849E3B79C61EE5ECE3C /* Pods_MultiModuleTrial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiModuleTrial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDB678C2427BB51002746A9 /* MultiModuleTrial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiModuleTrial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDB678F2427BB51002746A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4CDB67902427BB51002746A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -43,6 +49,8 @@
 		4CDB67A72427BB54002746A9 /* MultiModuleTrialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiModuleTrialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDB67AB2427BB54002746A9 /* MultiModuleTrialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiModuleTrialTests.m; sourceTree = "<group>"; };
 		4CDB67AD2427BB54002746A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BCCE83244A533F0135E0BC2 /* Pods-MultiModuleTrialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiModuleTrialTests.debug.xcconfig"; path = "Target Support Files/Pods-MultiModuleTrialTests/Pods-MultiModuleTrialTests.debug.xcconfig"; sourceTree = "<group>"; };
+		83079F0923CFEE6A81B090EF /* Pods_MultiModuleTrialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiModuleTrialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5643F93AB8008E5422B8DB2D /* Pods_MultiModuleTrial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E903D567C0BF94AA78F277AF /* Pods_MultiModuleTrialTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +79,8 @@
 				4CDB678E2427BB51002746A9 /* MultiModuleTrial */,
 				4CDB67AA2427BB54002746A9 /* MultiModuleTrialTests */,
 				4CDB678D2427BB51002746A9 /* Products */,
+				CC11330B1B1651A0668C917B /* Pods */,
+				F4C1A3B0685636D664DF23FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +120,27 @@
 			path = MultiModuleTrialTests;
 			sourceTree = "<group>";
 		};
+		CC11330B1B1651A0668C917B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A380AE7C955DCD42E217F4D /* Pods-MultiModuleTrial.debug.xcconfig */,
+				029DB588530E481DAB067E26 /* Pods-MultiModuleTrial.release.xcconfig */,
+				7BCCE83244A533F0135E0BC2 /* Pods-MultiModuleTrialTests.debug.xcconfig */,
+				4472F9C20C29066791678618 /* Pods-MultiModuleTrialTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F4C1A3B0685636D664DF23FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48E88849E3B79C61EE5ECE3C /* Pods_MultiModuleTrial.framework */,
+				83079F0923CFEE6A81B090EF /* Pods_MultiModuleTrialTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,6 +148,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CDB67B02427BB54002746A9 /* Build configuration list for PBXNativeTarget "MultiModuleTrial" */;
 			buildPhases = (
+				2B7925585DA734B616BEB642 /* [CP] Check Pods Manifest.lock */,
 				4CDB67882427BB51002746A9 /* Sources */,
 				4CDB67892427BB51002746A9 /* Frameworks */,
 				4CDB678A2427BB51002746A9 /* Resources */,
@@ -132,6 +166,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CDB67B32427BB54002746A9 /* Build configuration list for PBXNativeTarget "MultiModuleTrialTests" */;
 			buildPhases = (
+				1AB39BB64239C4A7A8D2EBB4 /* [CP] Check Pods Manifest.lock */,
 				4CDB67A32427BB54002746A9 /* Sources */,
 				4CDB67A42427BB54002746A9 /* Frameworks */,
 				4CDB67A52427BB54002746A9 /* Resources */,
@@ -202,6 +237,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AB39BB64239C4A7A8D2EBB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MultiModuleTrialTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B7925585DA734B616BEB642 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MultiModuleTrial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4CDB67882427BB51002746A9 /* Sources */ = {
@@ -365,6 +447,7 @@
 		};
 		4CDB67B12427BB54002746A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A380AE7C955DCD42E217F4D /* Pods-MultiModuleTrial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -381,6 +464,7 @@
 		};
 		4CDB67B22427BB54002746A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 029DB588530E481DAB067E26 /* Pods-MultiModuleTrial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -397,6 +481,7 @@
 		};
 		4CDB67B42427BB54002746A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BCCE83244A533F0135E0BC2 /* Pods-MultiModuleTrialTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -416,6 +501,7 @@
 		};
 		4CDB67B52427BB54002746A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4472F9C20C29066791678618 /* Pods-MultiModuleTrialTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
